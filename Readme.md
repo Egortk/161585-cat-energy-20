@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Егор Ткаченко](https://up.htmlacademy.ru/adaptive/20/user/161585).
-* Наставник: `Неизвестно`.
+* Наставник: `Егор Глебов`.
 
 ---
 
