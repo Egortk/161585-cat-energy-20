@@ -4,8 +4,6 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-<<<<<<< Updated upstream
-=======
     "autoprefixer": "9.8.4",
     "browser-sync": "2.26.7",
     "gulp-plumber": "1.2.1",
@@ -13,20 +11,17 @@
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "2.6.5",
     "gulp": "4.0.2",
->>>>>>> Stashed changes
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-<<<<<<< Updated upstream
     "stylelint": "stylelint .",
     "test": "npm run editorconfig"
   },
   "editorconfig-cli": [
     "*.json",
     "source/*.html"
-=======
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
@@ -36,15 +31,6 @@
     "last 2 versions",
     "not dead",
     "not ie <= 11"
-  ],
-  "editorconfig-cli": [
-    "*.json",
-    "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/sass/**/*.scss"
->>>>>>> Stashed changes
   ],
   "engines": {
     "node": "12.18.2"
