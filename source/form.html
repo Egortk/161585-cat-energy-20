@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Функциональное питание для котов</title>
     </head>
-    
+
     <body>
         <header class="page-header">
             <a class="page-header__header-logo">главная
@@ -17,85 +17,85 @@
             </nav>
             <button type="button" class="page-header__toggle-btn">Открыть меню</button>
         </header>
-        
+
         <main class="page-program">
 
             <h1 class="page-program__title">Подбор программы</h1>
             <p class="page-program__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
             <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
-                <fieldset class="form-section">
+                <fieldset class="program-form__section">
                     <legend class="visually-hidden">Кратко о питомце</legend>
                     <div class="text-field">
-                        <label class="input-label" for="cat-name">Имя:*</label>
-                        <input class="text-input" type="text" id="cat-name" name="name" placeholder="Барсик" required>
+                        <label for="cat-name">Имя:*</label>
+                        <input type="text" id="cat-name" name="name" placeholder="Барсик" required>
                     </div>
                     <div class="text-field">
-                        <label class="input-label" for="cat-weight">Вес (КГ):*</label>
-                        <input class="text-input" type="text" id="cat-weight" name="weight" placeholder="7" required>
+                        <label for="cat-weight">Вес (КГ):*</label>
+                        <input type="text" id="cat-weight" name="weight" placeholder="7" required>
                     </div>
                     <div class="text-input">
-                        <label class="input-label" for="cat-age">Возраст (Лет):</label>
-                        <input class="text-input" type="text" id="cat-age" name="age" placeholder="7">
+                        <label for="cat-age">Возраст (Лет):</label>
+                        <input type="text" id="cat-age" name="age" placeholder="7">
                     </div>
                 </fieldset>
-                
-                <fieldset class="form-section">
+
+                <fieldset class="program-form__section">
                     <legend class="visually-hidden">Программа</legend>
                     <div class="radiobutton-field">
-                        <input class="radiobutton" type="radio" value="slimming" id="program-slimming" name="program" checked>
-                        <label class="radiobutton-label" for="program-slimming">похудение</label>
+                        <input type="radio" value="slimming" id="program-slimming" name="program" checked>
+                        <label for="program-slimming">похудение</label>
                     </div>
                     <div class="radiobutton-field">
-                        <input class="radiobutton" type="radio" value="weighting" id="program-weighting" name="program">
-                        <label class="radiobutton-label" for="program-weighting">Набор массы</label>
+                        <input type="radio" value="weighting" id="program-weighting" name="program">
+                        <label for="program-weighting">Набор массы</label>
                     </div>
                     <div class="radiobutton-field">
-                        <input class="radiobutton" type="radio" value="unknown" id="program-unknown" name="program">
-                        <label class="radiobutton-label" for="program-unknown">Не знаю (Нужен ваш совет)</label>
+                        <input type="radio" value="unknown" id="program-unknown" name="program">
+                        <label for="program-unknown">Не знаю (Нужен ваш совет)</label>
                     </div>
                 </fieldset>
-                
-                <fieldset class="program-form">
+
+                <fieldset class="program-form__section">
                     <legend class="program-form__form-label">Контактные данные (владельца кота)</legend>
                     <div class="text-field">
-                        <label class="input-label" for="email">E-mail:*</label>
-                        <input class="text-input_icon" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                        <label for="email">E-mail:*</label>
+                        <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
                     </div>
                     <div class="text-field">
-                        <label class="input-label" for="phone">Телефон:*</label>
-                        <input class="text-input_icon" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                        <label for="phone">Телефон:*</label>
+                        <input type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
                     </div>
                 </fieldset>
-                
-                <fieldset class="program-form">
+
+                <fieldset class="program-form__section">
                     <legend class="program-form__form-label">Комментарий</legend>
-                    <label class="input-label" for="comment">Комментарий</label>
-                    <textarea class="text-aera" type="text" id="comment" name="comment" placeholder="Расскажите обо всех повaдках кота"></textarea>
+                    <label for="comment">Комментарий</label>
+                    <textarea id="comment" name="comment" placeholder="Расскажите обо всех повaдках кота"></textarea>
                 </fieldset>
-                
-                <fieldset class="additional form-section">
+
+                <fieldset class="additional program-form__section">
                     <legend class="program-form__form-label">Дополнительно</legend>
                     <div class="checkbox-field">
-                        <input class="checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
-                        <label class="checkbox-label" for="sweetener">сахарозаменитель</label>
+                        <input type="checkbox" id="sweetener" name="sweetener" checked>
+                        <label for="sweetener">сахарозаменитель</label>
                     </div>
                     <div class="checkbox-field">
-                        <input class="checkbox" type="checkbox" id="drinking-water" name="drinking-water">
-                        <label class="checkbox-label" for="drinking-water">питьевая вода</label>
+                        <input type="checkbox" id="drinking-water" name="drinking-water">
+                        <label for="drinking-water">питьевая вода</label>
                     </div>
                     <div class="checkbox-field">
-                        <input class="checkbox" type="checkbox" id="milk" name="milk">
-                        <label class="checkbox-label" for="milk">молоко</label>
+                        <input type="checkbox" id="milk" name="milk">
+                        <label for="milk">молоко</label>
                     </div>
                     <div class="checkbox-field">
-                        <input class="checkbox" type="checkbox" id="vitamins" name="vitamins">
-                        <label class="checkbox-label" for="vitamins">витамины</label>
+                        <input type="checkbox" id="vitamins" name="vitamins">
+                        <label for="vitamins">витамины</label>
                     </div>
                 </fieldset>
                 <button type="submit" class="btn program-form__btn">отправить заявку</button>
                 <span class="program-form__description">* — Обязательные поля</span>
             </form>
-            
+
             <section class="welcome">
                 <div class="welcome__address-block">
                     <h3 class="welcome__title">приглашаем к сотрудничеству дилеров!</h3>
@@ -105,7 +105,7 @@
             </section>
 
         </main>
-        
+
         <footer class="footer">
             <img class="footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="логотип">
             <div class="socials">
