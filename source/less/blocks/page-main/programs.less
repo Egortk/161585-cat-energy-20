@@ -1,0 +1,51 @@
+.programs-item {
+    background-color: @basic-grey;
+    margin-bottom: 20px;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+
+}
+
+.programs-item__title {
+    .block-title;
+    display: flex;
+    align-items: center;
+    
+    &::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: @basic-green;
+        margin-right: 19px;
+
+    }
+}
+
+.programs-item__description {
+    .paragraph(@special_dark-grey);
+    padding-bottom: 29px;
+    margin-bottom: 19px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.programs-item__btn {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 20px;
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 12px;
+        background-image: url(../img/icon-right-arrow-verylong.svg);
+        background-repeat: no-repeat;
+        margin-left: 15px;
+    }
+}
