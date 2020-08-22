@@ -1,1 +1,62 @@
-// Начните писать стили здесь
+@import "temp";
+
+@import "colors";
+@import "typography";
+
+//Blocks
+@import "blocks/page-header";
+@import "blocks/welkome";
+@import "blocks/footer";
+
+//UI
+@import "blocks/buttons";
+
+//Main Page
+@import "blocks/page-main/first-section";
+@import "blocks/page-main/programs";
+@import "blocks/page-main/how-it-works";
+
+//Catalog
+@import "blocks/catalog/page-catalog";
+@import "blocks/catalog/product-item";
+@import "blocks/catalog/show-all";
+
+html {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}

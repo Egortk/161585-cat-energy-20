@@ -1,0 +1,35 @@
+.show-all {
+    padding-top: 26px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.show-all__wrapper {
+    padding-top: 26px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: min-content 29px min-content;
+    grid-gap: 8px;
+}
+
+.show-all__title {
+    .product-title;
+    text-align: center;
+    margin: 0;
+    
+    &::before {
+        content: "";
+        background-image: url(../img/icon-plus-mobile.svg);
+        width: 30px;
+        height: 30px;
+        margin-bottom: 23px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.show-all__description {
+    .paragraph-small(@special_dark-grey);
+    text-align: center;
+}
