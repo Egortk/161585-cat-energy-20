@@ -1,0 +1,60 @@
+//Mix
+.textfield-body() {
+    .input-text(#444444);
+    height: 45px;
+    border: none;
+    border: 1px solid @field-border;
+    padding: 0 15px;
+    
+    &:hover {
+       border: 1px solid @field-border-2; 
+    }
+    
+    &:focus {
+        outline: 2px solid @special_dark-grey;
+        outline-offset: -2px;
+    }
+}
+
+.icon(@image; @width; @height) {
+    &::after {
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-image: (@image);
+        background-repeat: no-repeat;
+        background-size: @width @height;
+        width: @width;
+        height: @height;
+        }
+}
+
+//Component
+.text-field {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 14px;
+    align-items: center;
+    
+    &--icon {
+        .icon(url(../img/icon-mail.svg); 20px; 14px;);
+    }
+    
+}
+
+.text-field label {
+    .input-text(@special_dark-grey);
+    white-space: nowrap;
+}
+
+
+.text-input {
+    .input-text(@special_dark-grey);
+    .textfield-body;
+    
+        
+
+}
+

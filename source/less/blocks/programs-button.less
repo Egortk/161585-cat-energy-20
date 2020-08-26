@@ -1,0 +1,22 @@
+.programs-item__btn {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 20px;
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 12px;
+        background-image: url(../img/icon-right-arrow-verylong.svg);
+        background-repeat: no-repeat;
+        margin-left: 15px;
+    }
+    
+    &:active {
+        opacity: 50%;
+    }
+}

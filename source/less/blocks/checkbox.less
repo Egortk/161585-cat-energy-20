@@ -1,0 +1,66 @@
+.checkbox-field {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 14px;
+    align-items: center;
+}
+
+.checkbox-input {
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+.checkbox-label {
+    .input-text(@black);
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 13px;
+    align-items: center;
+    white-space: nowrap;
+    
+    &:before {
+        width: 30px;
+        height: 30px;
+        content: "";
+        display: block;
+        border: 1px solid @special_grey;
+        background-color: @white;
+        z-index: 1;
+    }
+
+    &:after {
+        content: "";
+        display: grid;
+        position: absolute;
+        margin-left: 9px;
+        margin-top: 8px;
+        width: 18px;
+        height: 14px;
+        border-radius: 50%;
+        background-image: url(../img/icon-tick.svg);
+        z-index: 2;
+        opacity: 0;
+    }
+}
+
+.checkbox-input:checked + .checkbox-label:before {
+
+}
+
+.checkbox-input:checked + .checkbox-label:after {
+    opacity: 1;
+}
+
+.checkbox-input:hover + .checkbox-label:before {
+    border: 1px solid #BABABA;
+}
+
+.checkbox-input:active + .checkbox-label:before{
+    opacity: 30%;
+}
+
+.checkbox-input:active + .checkbox-label:after{
+    opacity: 30%;
+}
+
+

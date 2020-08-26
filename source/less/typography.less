@@ -1,5 +1,5 @@
 .page-title(@text-color) {
-    font-family: "Oswald";
+    font-family: "Oswald", Arial, sans-serif;
     font-weight: 400;
     line-height: 36px;
     font-size: 36px;
@@ -7,7 +7,7 @@
 }
 
 .subtitle(@text-color) {
-    font-family: "Oswald";
+    font-family: "Oswald", Arial, sans-serif;
     font-weight: 400;
     line-height: 14px;
     font-size: 14px;
@@ -16,30 +16,46 @@
 }
 
 .section-title() {
-    font-family: "Oswald";
+    font-family: "Oswald", Arial, sans-serif;
     font-weight: 400;
     line-height: 40px;
     font-size: 36px;
 }
 
 .block-title() {
-    font-family: "Oswald";
+    font-family: "Oswald", Arial, sans-serif;
     font-weight: 400;
     line-height: 37px;
     font-size: 24px;
     text-transform: uppercase;
 }
 
+.block-title-2() {
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 24px;
+}
+
+
 .product-title() {
-    font-family: "Oswald";
+    font-family: "Oswald", Arial, sans-serif;
     font-weight: 400;
     line-height: 20px;
     font-size: 16px;
     text-transform: uppercase;
 }
 
+.product-title-2() {
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
 .paragraph(@text-color) {
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-weight: 400;
     line-height: 18px;
     font-size: 14px;
@@ -47,11 +63,37 @@
 }
 
 .paragraph-small(@text-color) {
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-weight: 400;
     line-height: 16px;
     font-size: 12px;
     color: @text-color;
 }
 
+.input-text(@text-color) {
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @text-color;
+}
 
+.line__title() {
+    .block-title-2;
+    width: 100%+20px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 22px;
+    margin: 0;
+    white-space: nowrap;
+    
+    &::after {
+        content: "";
+        height: 6px;
+        width: 100%;
+        border-bottom: 2px solid @basic-green;
+        display: block;
+        margin-top: 8px;
+    }
+}

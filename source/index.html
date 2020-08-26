@@ -3,6 +3,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Функциональное питание для котов</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
@@ -31,13 +32,13 @@
             <div class="programs container">
                 <h2 class="visually-hidden">Программы</h2>
                 <section class="programs-item">
-                    <h3 class="programs-item__title">Похудение</h3>
+                    <h3 class="programs-item__title programs-item__title--weightloss">Похудение</h3>
                     <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                     <a class="programs-item__btn" href="catalog.html">Каталог slim</a>
                 </section>
 
                 <section class="programs-item">
-                    <h3 class="programs-item__title">Набор массы</h3>
+                    <h3 class="programs-item__title programs-item__title--weightgain">Набор массы</h3>
                     <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                     <a class="programs-item__btn" href="catalog.html">Каталог pro</a>
                 </section>
@@ -46,36 +47,45 @@
             <section class="how-it-works container">
                 <h2 class="how-it-works__title">Как это работает</h2>
                 <ul class="how-it-works__advantages-list">
-                    <li class="how-it-works__advantage">
+                    <li class="how-it-works__advantage how-it-works__advantage--one">
                         Функциональное питание содержит только полезные питательные вещества.
                     </li>
-                    <li class="how-it-works__advantage">
+                    <li class="how-it-works__advantage how-it-works__advantage--two">
                         Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                     </li>
-                    <li class="how-it-works__advantage">
+                    <li class="how-it-works__advantage how-it-works__advantage--three">
                         Замените один-два приема обычной еды на наше функциональное питание.
                     </li>
-                    <li class="how-it-works__advantage">
+                    <li class="how-it-works__advantage how-it-works__advantage--four">
                         Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
                     </li>
                 </ul>
             </section>
 
             <section class="example">
-                <h2 class="example__title">Живой пример</h2>
-                <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-                <ul class="example__accent-blocks">
-                    <li class="accent-block">5 КГ <br/>снижение веса
-                    </li>
-                    <li class="accent-block">60 ДНЕЙ <br/>затрачено времени
-                    </li>
-                </ul>
-                <span class="example__expenses">Затраты на питание: 15 000 РУБ. </span>
-                <img class="example__image-before" src="img/before-mobile@1x.png" width="311" height="232" alt="до">
-                <div class="slider">
-                    <span class="slider__label">было</span>
-                    <input class="slider__range" type="range">
-                    <span class="slider__label">стало</span>
+                <div class="example__wrappre container">
+                    <h2 class="example__title">Живой пример</h2>
+                    <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+                    <ul class="example__accent-blocks">
+                        <li class="accent-block">
+                            <span class="accent-block__mainline">5 КГ</span>
+                            <span class="accent-block__subline">снижение веса</span>
+                        </li>
+                        <li class="accent-block">
+                            <span class="accent-block__mainline">60 ДНЕЙ</span>
+                            <span class="accent-block__subline">затрачено времени</span>
+                        </li>
+                    </ul>
+                    <span class="example__expenses">Затраты на питание: 15 000 РУБ. </span>
+                    <div class="example__slider">
+                        <img class="example__image" src="img/after-mobile@1x.png" width="311" height="232" alt="после">
+                        <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="до">
+                    </div>    
+                    <div class="slider">
+                        <span class="slider__label">было</span>
+                        <input class="slider__range" type="range">
+                        <span class="slider__label">стало</span>
+                    </div>
                 </div>
             </section>
 
